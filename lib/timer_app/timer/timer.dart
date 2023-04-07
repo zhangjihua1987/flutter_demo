@@ -10,7 +10,9 @@ class MyActions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<TimerBloc, TimerState>(builder: (context, state) {
+    return BlocBuilder<TimerBloc, TimerState>(
+      buildWhen: (previous, current) => previous.runtimeType != current.runtimeType,
+      builder: (context, state) {
       return Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_demo/timer_app/ticker.dart';
-import 'package:flutter_demo/timer_app/timer/bloc/timer_bloc.dart';
 import 'package:flutter_demo/timer_app/timer/timer.dart';
 
 class TimerPage extends StatelessWidget {
